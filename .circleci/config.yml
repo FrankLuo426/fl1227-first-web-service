@@ -5,6 +5,3 @@ workflows:
   node-tests:
     jobs:
       - node/test
-      - run:
-        name: Run tests
-        command: npm test
