@@ -15,3 +15,5 @@ const randomNumberJSON = (max = 1) => {
       response.write(randomNumberJSON(params.max));
       response.end();
   };
+
+  module.exports.getRandomNumberResponse = getRandomNumberResponse;
