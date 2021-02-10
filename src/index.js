@@ -1,3 +1,9 @@
+//console.log('First web service starting up ...');
+// 1 - pull in the HTTP server module
+const http = require('http');
+
+// 2 - pull in URL and query modules (for URL parsing)
+const url = require('url');
 const query = require('querystring');
 
 const jsonHandler = require('./jsonResponses.js');
@@ -9,12 +15,7 @@ const urlStruct = {
   '/random-number': jsonHandler.getRandomNumberResponse,
   '/notFound': htmlHandler.get404Response
 }
-//console.log('First web service starting up ...');
-// 1 - pull in the HTTP server module
-const http = require('http');
 
-// 2 - pull in URL and query modules (for URL parsing)
-const url = require('url');
 
 
 // 3 - locally this will be 3000, on Heroku it will be assigned
