@@ -1,5 +1,4 @@
-const jsonHandler = require('./jsonResponses.js');
-const htmlHandler = require('./htmlResponses.js');
+
 
 
 const urlStruct = {
@@ -14,6 +13,9 @@ const http = require('http');
 // 2 - pull in URL and query modules (for URL parsing)
 const url = require('url');
 const query = require('querystring');
+
+const jsonHandler = require('./jsonResponses.js');
+const htmlHandler = require('./htmlResponses.js');
 
 // 3 - locally this will be 3000, on Heroku it will be assigned
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
